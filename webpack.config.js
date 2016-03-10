@@ -36,14 +36,7 @@ module.exports = {
       },
       {
         test: /\.html$/,
-        exclude: /(node_modules)|(index\.html$)/,
-        loaders: [
-          'ngtemplate?relativeTo=' + __dirname,
-        ],
-      },
-      {
-        test: /\.html$/,
-        loader: 'html',
+        loader: 'file?name=[path][name].html',
       },
       {
         test: /\.(otf|eot|svg|ttf|woff)/,
