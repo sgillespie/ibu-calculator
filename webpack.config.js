@@ -62,6 +62,8 @@ module.exports = {
       allChunks: true,
     }),
     new HtmlWebpackPlugin({
+      appName: 'app',
+      appTemplate: 'views/index.html',
       title: 'IBU Calculator',
       template: 'index.ejs',
     }),
