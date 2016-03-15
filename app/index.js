@@ -4,7 +4,6 @@ import './views/index.html';
 import angular from 'angular';
 import controller from './controllers';
 
-angular
+export default angular
   .module('app', [])
   .controller('calculator', controller);
-
