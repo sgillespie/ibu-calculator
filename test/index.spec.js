@@ -5,6 +5,6 @@ chai.should();
 
 describe('App', function () {
   it('app.name should be \'app\'', function () {
-    app.name.should.equal('app');
+    app.should.equal('app');
   });
 });

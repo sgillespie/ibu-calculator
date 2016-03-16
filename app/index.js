@@ -6,4 +6,5 @@ import controller from './controllers';
 
 export default angular
   .module('app', [])
-  .controller('calculator', controller);
+  .controller('calculator', ['$scope', controller])
+  .name;
