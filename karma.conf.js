@@ -17,13 +17,11 @@ module.exports = function (config) {
     singleRun: false,
 
     files: [
-      'test/*.spec.js',
-      'test/**/*.spec.js'
+      'test/tests.js'
     ],
 
     preprocessors: {
-      'test/*.spec.js': ['webpack'],
-      'test/**/*.spec.js': ['webpack']
+      'test/tests.js': ['webpack']
     },
 
     webpack: webpackConfig,

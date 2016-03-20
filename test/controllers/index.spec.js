@@ -1,7 +1,5 @@
 import app from '../../app';
-import 'angular-mocks';
 import chai from 'chai';
-
 
 const should = chai.should();
 
