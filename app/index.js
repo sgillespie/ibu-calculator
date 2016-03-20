@@ -1,7 +1,6 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
+import './vendor';
 import './views/index.html';
 
-import angular from 'angular';
 import controller from './controllers';
 
 export default angular
