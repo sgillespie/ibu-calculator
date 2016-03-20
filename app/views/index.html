@@ -10,7 +10,7 @@
         <input class="form-control"
                id="volume"
                type="number"
-               ng-model="targets.volume" />
+               ng-model="appState.targets.volume" />
       </div>
 
       <div class="col-xs-3 form-group">
@@ -18,32 +18,32 @@
         <input class="form-control"
                id="gravity"
                type="number"
-               ng-model="targets.gravity" />
+               ng-model="appState.targets.gravity" />
       </div>
     </div>
 
     <hr />
     
-    <div class="row">
+    <div class="row" ng-repeat="hop in appState.hops">
       <div class="col-xs-3 form-group">
         <label for="hop-type">Hop Type</label>
         <input class="form-control"
                id="hop-type"
-               placeholder="Cascade" />
+               ng-model="hop.type" />
       </div>
 
       <div class="col-xs-3 form-group">
         <label for="weight">Weight (Oz)</label>
         <input class="form-control"
                id="weight"
-               placeholder="1.0" />
+               ng-model="hop.weight" />
       </div>
 
       <div class="col-xs-3 form-group">
         <label for="boil-time">Boil Time (Minutes)</label>
         <input class="form-control"
                id="boil-time"
-               placeholder="60" />
+               ng-model="hop.boilTime" />
       </div>
 
       <div class="col-xs-3 form-group">
